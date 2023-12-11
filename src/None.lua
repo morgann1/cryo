@@ -9,7 +9,7 @@
 
 local None = newproxy(true)
 
-getmetatable(None).__tostring = function()
+getmetatable(None :: any).__tostring = function()
 	return "Cryo.None"
 end
 
